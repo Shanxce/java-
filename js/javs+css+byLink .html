@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>css-link实例</title>
+<link rel=stylesheet href="link.css" id="css"  type="text/css">
+<script language = "javascript"> 
+     function ca()
+          {  
+          document.getElementById('css').href ="link2.css";
+           }  
+   </script> 
+
+<script type="text/javascript"> 
+     function co()
+          {  
+          var nt2=document.getElementById("newtype2");
+          nt2.style.cssText="color:blue"; 
+           }  
+   </script> 
+
+<style type="text/css">
+     #newtype2{color:green;}
+</style>
+</head>
+
+<body>
+通过设置“document.getElementById('css').href = 'link2.css”改变整个页面样式:
+
+<form>
+<input Type="button" Value="改变整个页面样式" onclick="ca()">
+</form>
+<br>
+
+<h2 class="new-type">This is header 1</h1>
+<h3 class="new-type">This is header 1</h1>
+<h4 class="new-type">This is header 1</h1>
+<h5 class="new-type">This is header 1</h1>
+<h6 class="new-type">This is header 1</h1>
+
+<hr>
+<!--另外一个例子-->
+通过设置“style.cssText”改变某个页面元素样式:
+
+<form>
+<input Type="button" Value="改变某个样式" onclick="co() ">
+</form>
+<br>
+
+<h1 id="newtype2">This is header 1我是css实例</h1>
+
+</body>
+
+</html>

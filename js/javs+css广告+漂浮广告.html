@@ -1,0 +1,61 @@
+<head>
+<title>飘浮广告</title>
+<script language="jscript" type="text/javascript">
+    //漂浮广告的初始位置
+     var x=50,y=60;
+    
+     //xin为真,则向右运动,否则向左运动.
+     //yin为真,则向右运动,否则向左运协.
+     var xin=true,yin=true;
+    
+     //移动的距离
+     var step=1;
+    
+     //移动的步长
+     var delay=10;
+    
+     function floatAD()
+     {
+         //L左边界,T右边界
+         var L=T=0;
+        
+         //层移动的右边界
+         var R=window.document.body.offsetWidth-window.document.getElementById("fly").offsetWidth;
+        
+         //层移动的下边界
+         var B=window.document.body.offsetHeight-window.document.getElementById("fly").offsetHeight;
+        
+         //层移动后的左边界
+         window.document.getElementById("fly").style.left=x;
+        
+         //层移动后的上边界
+         window.document.getElementById("fly").style.top=y;
+        
+         //判断水平方向
+         x=x+step*(xin?1:-1);
+        
+         //到达边界后的处理
+         if(x<L){xin=true;x=L;}
+         if(x>R){xin=false;x=R}
+        
+         //判断生直方向
+         y=y+step*(yin?1:-1);
+        
+         //到达边界后的处理
+         if(y<T){yin=true;y=T;}
+         if(y>B){yin=false;y=B;}
+        
+         //隔多少时间调用一次
+         setTimeout("floatAD()",delay);
+     }
+</script>
+</head>
+<body onload="floatAD()">
+
+通过对CSS中top，left的控制，使得浮动的广告随意游动。
+<div id="fly" style="position:absolute;   left:16px;    top:80px; width:295px; height:176px; z-index:1;">
+    <img src="logo_baidu.gif" width="295" height="176"/>
+</div>
+</body>
+</html>
+<head>

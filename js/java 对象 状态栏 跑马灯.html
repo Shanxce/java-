@@ -1,0 +1,15 @@
+<html>
+<head><title>跑马灯</title> 
+<SCRIPT Language ="JavaScript">
+string0="欢迎使用跑马灯实例程序。祝君好运！";
+n=string0.length;                          //把字符串的长度赋给变量n
+function pmd( )
+{ string0=string0.substring (1,n)+string0.substring(0,1);
+                                                       //字串的首字符移到字符串末尾
+  window.status=string0;             //字符串赋给窗口的STATUS属性
+ setTimeout("pmd( )",150);}      //每隔150毫秒执行一次本函数
+</SCRIPT>
+</head>
+<body onload="pmd( )">
+</body>
+</html> 

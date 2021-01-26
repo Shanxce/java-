@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>alert、confirm方法应用举例</title>
+<script language="Javascript">
+function MyClick( )
+{ if (confirm("你确定是这个答案吗?"))
+     document.myform.result.value="哈哈，你答对了！！" ;
+else
+   document.myform.result.value="很遗憾，你答错了！！";}
+</script>
+</head> 
+<body onLoad="window.alert('欢迎光临本页')"
+ onUnload="window.alert('谢谢您的浏览，欢迎下次再来!')">
+<form name="myform">
+<center> <input type=button onclick="MyClick( )" value=confirm> </center> 
+<center><input type=text  name="result"  size=20></center>
+</form>
+</body>
+</html> 
+

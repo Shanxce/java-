@@ -1,0 +1,36 @@
+<html>
+<head>
+<script type="text/javascript">
+     function currLocation()
+     {
+          var head= document.getElementById("head");   
+          head.style.width = "200px";   
+          head.style.height = "70px";   
+          head.style.display = "block"; 
+     }
+</script>
+
+<style>
+#head
+{
+widthL:300;
+height:500;
+display:inline;
+border-style: solid;bord-color:red;border-width: 5px;
+}
+</style>
+</head>
+
+<body>
+hello,<div id="head">
+通过“style.***”逐一设置：
+head.style.width = "200px";   
+head.style.height = "70px";   
+head.style.display = "block"; 
+</div>ok?
+<form>
+<input type="button" onclick="currLocation()" value="change">
+</form>
+<br>
+</body>
+</html>

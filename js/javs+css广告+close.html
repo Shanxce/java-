@@ -1,0 +1,55 @@
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=GB2312" /> 
+    <title>制作浮动的广告图片</title>
+    <script type="text/javascript">
+    //使层总置于顶端的初始值
+    var advInitTop=0;
+    var closeInitTop=0;
+    //获取广告图片所在的层上边距的初始值
+    function inix()
+    {
+        advInitTop=parseInt(window.document.getElementById("advLayer").style.top);
+        closeInitTop=parseInt(window.document.getElementById("closeLayer").style.top);
+    }
+   
+    //使用广告图片所在的层与滚动条同步移动
+    function move()
+    {
+        document.getElementById("advLayer").style.top=advInitTop+parseInt(window.document.body.scrollTop);
+        document.getElementById("closeLayer").style.top=closeInitTop+parseInt(window.document.body.scrollTop);
+     }
+    
+     //隐藏advLaayer closeLayer 并不为被隐藏的对象保留其物理空间
+     function closeMe()
+     {
+        window.document.getElementById("closeLayer").style.display="none";
+        window.document.getElementById("advLayer").style.display="none";
+     }
+    
+     //窗口的滚动事件,当页面滚动时调用move()函数
+     window.onscroll=move;
+    </script>
+</head>
+<body onload="inix()">
+
+<!-- 广告 -->
+<div id="advLayer" style="position:absolute;left:16px;top:80px;width:302px;height:171px; z-index:1;">
+    <img alt="adv" src="logo_sina.jpg" width="302" height="171"/>
+</div>
+
+<!-- 关闭 -->
+<div id="closeLayer" onclick="closeMe()"style="position:absolute;left:214px;top:230px;width:27px;height:19px;z-index:2;">
+    <img alt="close" src="close.jpg"/>
+</div>
+
+<p style="color:red;">通过对图像所属的DIV中display属性的控制，以达到显示和伪“关闭”的效果<p>
+
+alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>
+alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>
+alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>
+alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>
+alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>
+alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>
+alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>
+alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>alsndf<br>
+</body>

@@ -1,0 +1,64 @@
+<html>
+<head><title>网页对象与客户端脚本程序示例</title>
+
+<SCRIPT Language ="JavaScript">
+var x,result;
+function factorial(x)
+{ if (x==0) return 1 ;
+   else 
+       {result=x*factorial(x-1);
+        return result;}
+}
+</SCRIPT>
+
+</head> 
+<body> 
+
+
+  <p align="center">网页对象与客户端脚本程序示例</p>
+  <hr>
+
+<center>
+
+  <table border="1" width="360">
+    <tr>
+      <td width="140" align="center">正整数n的阶乘</td>
+      <td width="50" align="center">&nbsp; </td>
+      <td width="150" align="center">结&nbsp;果 </td>
+    </tr>
+
+
+
+
+    <tr>
+      <td width="140">
+      <form method="post" name="form1" action="">
+      <p> n为:<input type = "text" name = "n" size = "12" value="0"></p>
+      </form>
+      </td> 
+
+      <td width="50">
+        <form method ="post" name="form2" action="">
+        <p align="center">
+        <input type = "button" value="等于" name = "equal" 
+  onclick = "document.form3.result.value =factorial (document.form1.n.value)"></p>
+        </form>
+    </td>
+
+
+
+    <td width="150">
+        <form method ="post" name="form3" action="">
+        <p><input type = "text" name = "result" size = "20"></p>
+        </form>
+    </td>
+  </tr>
+  <tr>
+    <td width = "345" bgcolor="#c0c0c0" colspan="3"></td>
+  </tr>
+</table>
+
+</center>
+
+</body>
+</html> 

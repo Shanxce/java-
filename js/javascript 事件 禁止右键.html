@@ -1,0 +1,16 @@
+<html>
+<head>
+<SCRIPT language="JavaScript"> 
+　　 function myclick() 
+　　 { 
+　　 　　 if(event.button==2) { alert('禁止了右键的功能！') } 
+　　 　　 if(event.button==1) { window.external.addFavorite('http://www.sina.com.cn','sina'); } 
+　　 } 
+　　 document.onmousedown=myclick; 
+</SCRIPT>
+</head>
+<body>
+重新定义左右键：<br>
+本例中：禁止了右键的功能！左键可以进行收藏功能。
+</body>
+</html>

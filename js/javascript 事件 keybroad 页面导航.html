@@ -1,0 +1,21 @@
+<html>
+<head>
+<script language = "javascript">  
+     document.onkeydown=ToPage  
+     var prevpage="http://www.taobao.net"    //上一页地址  
+     var nextpage="http://www.baidu.com"      //下一页地址  
+     function ToPage(event){  
+       event = event ? event : (window.event ? window.event : null);   
+       if (event.keyCode==37) location=prevpage  
+       if (event.keyCode==39) location=nextpage  
+             }  
+   </script> 
+</head>
+<body>
+重新定义键盘事件的响应：<br><br>
+下面是常用的两个键盘值：<br>
+Left Arrow	:37<br>
+Right Arrow	:39<br>
+本例中用方向键进行了连续页面的---上下页的浏览，节约了时间。
+</body>
+</html>

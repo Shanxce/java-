@@ -1,0 +1,23 @@
+<html>
+<head> 
+<SCRIPT Language ="JavaScript">
+function showDateTime( )
+{ now=new Date( );
+   yy=now.getYear( );
+   mm=now.getMonth( );
+   dd=now.getDate( );
+   HH=now.getHours ( ); if (HH<10) HH="0"+HH;
+   MM=now.getMinutes ( ); if (MM<10) MM="0"+MM;
+   SS=now.getSeconds ( ); if (SS<10) SS="0"+SS; 
+time.value=yy+"年"+mm+"月"+dd+"日  "+HH+"时"+MM+"分"+SS+"秒";
+  time1=setTimeout("showDateTime( )",300);
+ }
+</SCRIPT>
+</head>
+<body onload="showDateTime( );"><p></p> 
+    <p align="center">当前日期时间：<input type="text" name=time value=" " size=27></p>
+    <SCRIPT>
+      showDateTime( );
+    </SCRIPT>
+</body>
+</html> 

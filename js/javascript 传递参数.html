@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<script language="JavaScript">
+function ok()
+{
+  document.form2.textfield2.value=document.form1.textfield.value;
+}
+function ok1()
+{
+document.form1.textfield.value=document.form2.textfield2.value;
+}
+</script>
+</head>
+<body>
+
+
+<form name="form1" method="post" action="">
+  <input type="text" name="textfield">
+  <input type="button" name="Submit" value="1---------&gt;2" onClick="ok()">
+</form>
+
+<form name="form2" method="post" action="">
+  <input type="text" name="textfield2">
+  <input type="button" name="Submit" value="2-----&gt;1" onClick="ok1()">
+</form>
+
+</body>
+</html>
